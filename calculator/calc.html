@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="calc.css">
+  <title>simple calculator</title>
+</head>
+<body>
+  <div id="main">
+    <div id="main2">
+      <input id="type" type="text" placeholder=" ">
+
+      <div class="inner">
+        <button onclick="clearInput()">C</button>
+        <button class="button" onclick="deleteLastCharacter()">del</button>
+        <button onclick="appendSymbol('.')">.</button>
+        <button class="button" onclick="appendSymbol('/')">/</button>
+        
+      </div>
+      <div class="inner">
+        <button class="button" onclick="appendNumber(7)">7</button>
+        <button class="button" onclick="appendNumber(8)">8</button>
+        <button class="button"  onclick="appendNumber(9)">9</button>
+        <button class="button" onclick="appendSymbol('*')">*</button>
+      </div>
+      <div class="inner">
+        <button  class="button" onclick="appendNumber(4)">4</button>
+        <button  class="button" onclick="appendNumber(5)">5</button>
+        <button class="button" onclick="appendNumber(6)">6</button>
+        <button class="button" onclick="appendSymbol('-')">-</button>
+
+      </div>
+      <div class="inner">
+        <button class="button" onclick="appendNumber(1)">1</button>
+        <button  class="button" onclick="appendNumber(2)">2</button>
+        <button class="button" onclick="appendNumber(3)">3</button>
+        <button class="button" onclick="appendSymbol('+')">+</button>
+      </div>
+      
+      
+      <div class="inner">
+        <button onclick="appendNumber(0)">0</button>
+        <button id="equal" onclick="calculate()">=</button>
+      </div>
+    </div>
+
+    
+  </div>
+
+  <script src="calc.js"></script>
+</body>
+</html>
